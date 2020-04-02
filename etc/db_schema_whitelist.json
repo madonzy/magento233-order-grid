@@ -1,0 +1,8 @@
+{
+    "sales_order_grid": {
+        "column": {
+            "coupon_code": true,
+            "discount_amount": true
+        }
+    }
+}
