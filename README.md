@@ -10,4 +10,4 @@ This module add columns: Coupon Code and Discount Amount, into the Order Grid in
 2. bin/magento mod:en Yeremenko_OrderGrid
 3. bin/magento set:upg
 
-_Please note: this solution assumes that your shop don't have any old orders, that mean those colums would not be updated, until grid is reindexed, with their value for old orders. But if that is required I can implement this by adding patch which is updating sales_order_grid table with values for new columns._
+_Please note: Those colums would not be populated for old orders, until grid is reindexed, with their values. But if that is required I can implement this by adding patch which is merging sales_order into sales_order_grid table with values for new columns._
